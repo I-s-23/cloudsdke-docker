@@ -1,0 +1,8 @@
+version: "3"
+
+services:
+  gcloud:
+    build: ${COMPOSE_PROJECT_ROOT}/containers/gcloud
+    tty: true
+    volumes:
+      - ${COMPOSE_PROJECT_ROOT}/src:/src:cached
